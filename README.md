@@ -5,12 +5,14 @@
 - Clona el repositorio, solo tenemos la rama *main*
 - Ejecuta: composer install
 - Ejecuta: npm install
-- Actualiza la configuración de base de datos de tu ambiente en el .env
+- Actualiza la key_app en el .env con el comando: php artisan key:generate
+- Actualiza la configuración de base de datos en el .env
 - Ejecuta la migración: php artisan migrate
-- Ejecuta el seeder: php artisan db:seed --class=ArticleSeeder
+- Ejecuta los seeder: php artisan db:seed --class=ArticleSeeder; php artisan db:seed --class=ProductSeeder
 - Inicia vite: npm run dev
-- Inicia el server: php artisan serve
-- Levantar la url: http://localhost:8000/articles
-- Levantar la url: http://localhost:8000/register
+- Inicia laravel: php artisan serve
+- Levantar la url en el navegador: /articles
+- Levantar la url en el navegador: /register
+- Levantar la url en el navegador: /products
 
 Saludos.
