@@ -11,6 +11,6 @@ class ProductController extends Controller
     public function index()
     {
         $products = Product::select('id', 'title', 'description', 'price')->get();
-        return Inertia::render('Products/Index', ['products' => [], 'title' => '']);
+        return Inertia::render('Products/Index', ['products' => $products]);
     }
 }
